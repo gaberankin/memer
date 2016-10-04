@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0; }
+  body .memer-app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; }
+    body .memer-app .memer-body {
+      height: 100vh;
+      padding: 1em;
+      display: flex;
+      flex-direction: row; }
+      body .memer-app .memer-body .memer-left, body .memer-app .memer-body .memer-right {
+        height: 100%;
+        flex: 1; }
+      body .memer-app .memer-body .memer-left {
+        border-right: 3px solid #aaa;
+        padding-right: 1em; }
+        body .memer-app .memer-body .memer-left .editor {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: row; }
+          body .memer-app .memer-body .memer-left .editor .line-numbers, body .memer-app .memer-body .memer-left .editor textarea {
+            font-family: monospace;
+            font-size: 0.8em;
+            line-height: 1em;
+            padding: 0;
+            border: 0; }
+          body .memer-app .memer-body .memer-left .editor .line-numbers {
+            width: 20px;
+            height: 100%;
+            margin-right: 5px;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: right; }
+          body .memer-app .memer-body .memer-left .editor textarea {
+            height: 100%;
+            flex: 1;
+            resize: none;
+            background: transparent; }
+            body .memer-app .memer-body .memer-left .editor textarea:focus {
+              outline: none; }
+          body .memer-app .memer-body .memer-left .editor.has-focus {
+            background-color: #ffffcc; }
+      body .memer-app .memer-body .memer-right {
+        overflow: auto;
+        padding-left: 1em; }
